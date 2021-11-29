@@ -1,0 +1,103 @@
+/* Especificaciones iniciales para el body */
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #242E52;
+
+}
+
+.bg__img{
+    position: absolute;
+    z-index: -10;
+}
+
+.bg__img--top{
+    top: -800px;
+    right: -1200px;
+}
+
+.bg__img--button{
+    bottom: -1000px;
+    left: -100px;
+}
+
+/* css header con logo y barra de navegacion */
+
+.containerheader{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.conteinerheader__menu{
+    text-decoration: none;
+    margin: 10px;
+    color: #242E52;
+}
+
+.containerheader__button{
+    background-color: #F3603B;
+    color: white;
+    border-radius: 30px;
+    border-bottom: none;
+    box-shadow: 2px 2px 2px 1px #F3603B;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+/* estilos de seccion principal */
+
+.contaninermain{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.containermain__text{
+    width: 30%;
+    padding-right: 50px;
+    padding-top:30px ;
+}
+
+.containermain__text--letterbig{
+    font-weight: 700;
+    font-size: 58px;
+}
+
+.containermain__text--letterblack{
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 200px;
+    line-height: 30px;
+}
+
+.contaninermain--button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.containermain__img{
+    width: 25%;
+    padding-left: 50px;
+}
+
+/* estilos de seccion de contenido */
+
+.containerflex2{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.containerflex2__text{
+    width: 30%;
+    padding-right: 50px;
+}
+
+.containerflex2__items{
+    width: 25%;
+    padding-left: 50px;
+}
+
+
