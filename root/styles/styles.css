@@ -1,10 +1,12 @@
 /* Especificaciones iniciales para el body */
+html {
+    font-size: 16px;
+}
 body{
     padding: 0%;
     margin: 0%;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #242E52;
-
 }
 
 .bg__img{
@@ -31,19 +33,39 @@ body{
 }
 
 .conteinerheader__menu{
+    display: flex;
     text-decoration: none;
     margin: 10px;
     color: #242E52;
 }
 
+.conteinerheader__menu li {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    margin: 10px;
+    color: #242E52;
+}
+
+.conteinerheader__menu li:hover{
+    text-decoration: underline;
+    margin: 10px;
+    color: #242E52;
+}
+
 .containerheader__button{
+    cursor: pointer;
     background-color: #F3603B;
     color: white;
     border-radius: 30px;
-    border-bottom: none;
-    box-shadow: 2px 2px 2px 1px #F3603B;
+    border: none;
+    box-shadow: 2px 2px 2px 1px #f3603b78;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.containerheader__button:hover {
+    background-color: #b03f22;
 }
     
 /* estilos de seccion principal */
@@ -57,19 +79,19 @@ body{
 .containermain__text{
     width: 30%;
     padding-right: 50px;
-    padding-top:30px ;
+    padding-top:60px ;
 }
 
 .containermain__text--letterbig{
     font-weight: 700;
-    font-size: 58px;
+    font-size: 3.6rem;
 }
 
 .containermain__text--letterblack{
     color: #000000;
     font-weight: 500;
-    font-size: 16px;
-    padding-right: 200px;
+    font-size: 1rem;
+    padding-right: 70px;
     line-height: 30px;
 }
 
@@ -95,9 +117,141 @@ body{
     padding-right: 50px;
 }
 
+.containermain__text--letterbig{
+    font-size: 2.25rem;
+}
+
+.containerflex2__items--lettersmedium{
+    font-size: 1rem;
+}
+
+.containerflex2__items--letterclear{
+    color: #B3B2B7;
+    padding-right: 0px;
+}
+
+.pseudobefore1::before{
+    content: " 01 ";
+    margin-left: -30px;
+    background-color: #F3603B;
+    border-radius: 30px;
+}
+
 .containerflex2__items{
     width: 25%;
     padding-left: 50px;
 }
 
+/* Estilos cards comentarios */
 
+.containercomments{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.containercomments__comment{
+    width: 25%;
+    padding: 30px;
+    text-align: center;
+    background-color: #b3b2b761;
+    position: relative;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 1px #f3603b74;
+}
+
+.containercomments__comment--img{
+    position: absolute;
+    align-items: center;
+    top: -30%;
+    left: 35%;
+}
+
+.buttocenter{
+    align-items: center;
+}
+
+.containerflex3{
+    background-color: #F3603B;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerflex3__button{
+    background-color: white;
+    color: #F3603B;
+    border: none;
+}
+
+.containerflex3__title{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.containerflex4{
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.containerflex4__imgredes{
+
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    
+}
+.containerflex4__nav{
+    text-decoration: none;
+    display: flex;
+    padding: 10px; 
+}
+
+.containerflex4__nav1{
+    flex-direction: column;
+    
+
+}
+
+#email{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    text-align: left;
+    border-style: none;
+}
+
+/* Estilos para dar a conocer al usuario el llenar o no email */
+
+#email:invalid {
+    border: 2px dashed rgb(17, 2, 2);
+}
+
+#email:invalid:required {
+    background-image: linear-gradient(to right, rgb(73, 73, 73), rgb(235, 157, 75));
+}  
+#email:valid {
+    border: 2px solid yellow;
+}
+
+.containerflex4__imgredes--button{
+    background-color: #F3603B;
+    color: white;
+    border-radius: 20px;
+    border-bottom: none;
+    box-shadow: 2px 2px 2px 1px #f3603b78;
+    padding: 15px 25px 15px 25px;
+}
+
+.containerflex4__copy{
+    color:  #8C8C94;
+    font-weight: 500;
+    font-size: 0.78rem;
+    padding-left: 50px;
+
+}
