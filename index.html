@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>ManageSite</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
 </head>
 <body>
 
-    <img class="bg__img bg__img--top" src="/root/imagenes/bg-tablet-pattern 2.svg" alt="imagenfondo">
-    <img class="bg__img bg__img--button" src="/root/imagenes/bg-tablet-pattern.svg" alt="imagenfondo">
+    <img class="bg__img bg__img--top" src="/imagenes/bg-tablet-pattern 2.svg" alt="imagenfondo">
+    <img class="bg__img bg__img--button" src="/imagenes/bg-tablet-pattern.svg" alt="imagenfondo">
 
 <!-- El codigo sera construido inicialmente en su HTML, para ello empezaré con un HEADER
 el cual estará dividido en tres contenedores  
@@ -28,15 +28,16 @@ PARA DARLE NOMBRE A LAS CLASES SE USO METODOLOGIA BEM-->
     
 
     <div class="containerheader__img">
-        <img class="containerheader__img--img" src="/root/imagenes/logo.svg" alt="Logo Manage"> 
+        <img class="containerheader__img--img" src="/imagenes/logo.svg" alt="Logo Manage"> 
     </div>
     
+    
+
     <div class="containerheader__menuhamburguer">
-        <i class="fas fa-bars"></i>
-    </div>
-    
+        <input type="checkbox" id="headbtn__menu">
+        <label for="headbtn__menu"><i class="fas fa-bars"></i></label>
     <!-- Menu de navegacion  -->
-    <nav>
+    <nav class="conteinerheader__menu1">
         <ul class="conteinerheader__menu">
             <li><a href="">Pricing</a></li>
             <li><a href="">Product</a></li>
@@ -45,6 +46,9 @@ PARA DARLE NOMBRE A LAS CLASES SE USO METODOLOGIA BEM-->
             <li><a  href="">Community</a></li>
         </ul>
     </nav>
+    </div>
+    
+    
     <!-- Boton de acción -->
 
     <button class="containerheader__button"> Get started</button>
@@ -69,7 +73,7 @@ Para organizar estos contenedores se hara uso del flexbox -->
     </div>
 
     <div class="containermain__img">
-        <img src="/root/imagenes/illustration-intro.svg" alt="">
+        <img src="/imagenes/illustration-intro.svg" alt="">
     </div>
 
 </main>
@@ -137,7 +141,7 @@ los comentarios -->
 <section class="containercomments">
 
     <div class="containercomments__comment">
-        <img class="containercomments__comment--img"src="/root/imagenes/avatar-ali.png" alt="Foto Ali Bravo">
+        <img class="containercomments__comment--img"src="/imagenes/avatar-ali.png" alt="Foto Ali Bravo">
         <br>
         <br>
         <br>
@@ -151,7 +155,7 @@ los comentarios -->
     </div>
 
     <div class="containercomments__comment">
-        <img  class="containercomments__comment--img" src="/root/imagenes/avatar-anisha.png" alt="Foto Anisha">
+        <img  class="containercomments__comment--img" src="/imagenes/avatar-anisha.png" alt="Foto Anisha">
         <br>
         <br>
         <br>
@@ -166,7 +170,7 @@ los comentarios -->
     </div>
 
     <div class="containercomments__comment">
-        <img  class="containercomments__comment--img" src="/root/imagenes/avatar-richard.png" alt="Foto Richard">
+        <img  class="containercomments__comment--img" src="/imagenes/avatar-richard.png" alt="Foto Richard">
         <br>
         <br>
         <br>
@@ -185,7 +189,7 @@ los comentarios -->
 
     <div class="itemcarrusel" id="itemcarrusel1">
         <div class="tarjetacarrusel1" id="tarjetacarrusel1-1">
-            <img src="/root/imagenes/CC7CCF7B-6FC4-413D-B1F9-FFC39C400F8B_4_5005_c.jpeg" alt="">
+            <img src="/imagenes/CC7CCF7B-6FC4-413D-B1F9-FFC39C400F8B_4_5005_c.jpeg" alt="">
         </div>
         <div class="flechascarrusel1">
             <a href="#tarjetacarrusel1-3"><i class="fas fa-arrow-circle-left"></i></a>
@@ -195,7 +199,7 @@ los comentarios -->
 
     <div class="itemcarrusel" id="itemcarrusel2">
         <div class="tarjetacarrusel1" id="tarjetacarrusel1-2">
-            <img src="/root/imagenes/F7999263-7DB1-47CC-958E-9813569BF923_4_5005_c.jpeg" alt="">
+            <img src="/imagenes/F7999263-7DB1-47CC-958E-9813569BF923_4_5005_c.jpeg" alt="">
         </div>
         <div class="flechascarrusel1">
             <a href="#tarjetacarrusel1-1"><i class="fas fa-arrow-circle-left"></i></a>
@@ -205,7 +209,7 @@ los comentarios -->
 
     <div class="itemcarrusel" id="itemcarrusel3">
         <div class="tarjetacarrusel1" id="tarjetacarrusel1-3">
-            <img src="/root/imagenes/392F268C-FDE0-4A49-BABC-0CBED9A9ADB0_4_5005_c.jpeg" alt="">
+            <img src="/imagenes/392F268C-FDE0-4A49-BABC-0CBED9A9ADB0_4_5005_c.jpeg" alt="">
         </div>
         <div class="flechascarrusel1">
             <a href="#tarjetacarrusel1-2"><i class="fas fa-arrow-circle-left"></i></a>
@@ -239,7 +243,7 @@ los comentarios -->
     <span class="containerflex4__imgredes">
 
         <div class="containerflex4__imgredes--img">
-            <img src="/root/imagenes/Logo-footer.png" alt="Logo">
+            <img src="/imagenes/Logo-footer.png" alt="Logo">
         </div>
 
         <div class="containerflex4__imgredes--redes" >
