@@ -182,6 +182,10 @@ body{
 
 /* Estilos cards comentarios */
 
+#contepuntos{
+    display: none;
+}
+
 #conteitemscarrusel{
     display: none;
 }
@@ -189,7 +193,6 @@ body{
 .containercomments{
     display: flex;
     justify-content: space-around;
-    
 }
 
 .containercomments__comment{
@@ -213,7 +216,6 @@ body{
 .containercomments__comment--letter{
     color: #B9B9C1;
     font-weight: 500;
-
 }
 
 .buttocenter{
@@ -256,8 +258,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.5rem;
-    color: white;
-    
+    color: white;  
 }
 
 .containerflex4__imgredes i:hover{
@@ -270,7 +271,6 @@ body{
     padding: 30px; 
     font-weight: 400;
     line-height: 30px;
-
 }
 
 .containerflex4__nav1 a{
@@ -332,6 +332,7 @@ body{
 }
 
 
+
 @media (max-width:375px){
 
     /* menu hamburguesa */
@@ -361,19 +362,7 @@ body{
 
     #headbtn__menu:checked  ~ .conteinerheader__menu1{
         margin-left: 0%;
-    }
-
-
-    
-
-
-
-
-
-
-
-
-    
+    }    
     header button {
             display: none;
     }
@@ -404,6 +393,8 @@ body{
         text-align: center;
         width: auto;
     }
+
+    /* seccion de contenido */
 
     .containermain__text--letterblack{
         padding-right: 0; 
@@ -449,6 +440,8 @@ body{
         padding-right: 20px;
     }
 
+    /* SECCION COMENTARIOS */
+
     .containercomments{
         display: none;
     }
@@ -460,8 +453,6 @@ body{
         align-items: center;
         order: 1;
     }
-
-    
     .containerflex4__copy{
         order: 5;
     }
@@ -492,7 +483,7 @@ body{
     display: block;
     height: auto;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 15%;
 }
 
 .itemcarrusel{
@@ -500,26 +491,38 @@ body{
     height: 100%;
 }
 .tarjetacarrusel1{
-        background-color: burlywood;
-        height: 100%;
+    background-color: burlywood;
+    height: 100%;
 }
 .flechascarrusel1{
-        position: absolute;
-        height: 100%;
-        top: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;        
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;        
 }
 .flechascarrusel1 i{
     color: white;  
 }
 #conteitemscarrusel{
-        height: 220px;
-        width: 300px;
-        overflow: hidden;  
+    height: 220px;
+    width: 265px;
+    overflow: hidden;  
         
+}
+
+#contepuntos{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#contepuntos a{
+    font-size: 1rem;
+    color:#F3603B ;
+    text-decoration: none;
+
 }
 
     /* FINAL CARRUSEL */
@@ -555,6 +558,4 @@ body{
     .containerflex3 h2{
         text-align: center;
     }
-
-
 }
