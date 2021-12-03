@@ -7,6 +7,11 @@ body{
     margin: 0%;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #242E52;
+    font-weight: 700;
+}
+
+.containerheader__menuhamburguer{
+    display: none;
 }
 
 .bg__img{
@@ -15,42 +20,48 @@ body{
 }
 
 .bg__img--top{
-    top: -800px;
-    right: -1200px;
+    top: -300px;
+    right: 20px;
 }
 
 .bg__img--button{
-    bottom: -1000px;
-    left: -100px;
+    bottom: -1200px;
+    left: -500px;
 }
 
 /* css header con logo y barra de navegacion */
 
 .containerheader{
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding-top: 50px;
 }
 
 .conteinerheader__menu{
     display: flex;
-    text-decoration: none;
-    margin: 10px;
-    color: #242E52;
+    margin: 0;
+    padding:0;
 }
 
 .conteinerheader__menu li {
     list-style: none;
-    display: flex;
-    text-decoration: none;
+    font-weight: 500;
     margin: 10px;
+}
+
+.conteinerheader__menu li a {
+    text-decoration: none;
     color: #242E52;
 }
 
-.conteinerheader__menu li:hover{
+
+.conteinerheader__menu li:focus{
+    color:  #8C8C94;
+}
+.conteinerheader__menu li:hover a{
     text-decoration: underline;
-    margin: 10px;
-    color: #242E52;
+    color:  #8C8C94;
 }
 
 .containerheader__button{
@@ -60,12 +71,12 @@ body{
     border-radius: 30px;
     border: none;
     box-shadow: 2px 2px 2px 1px #f3603b78;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding:10px 40px;
 }
 
 .containerheader__button:hover {
-    background-color: #b03f22;
+    background-color: #e89a87;
+    color: white;
 }
     
 /* estilos de seccion principal */
@@ -114,7 +125,7 @@ body{
 
 .containerflex2__text{
     width: 30%;
-    padding-right: 50px;
+    padding-right: 3.1rem;
 }
 
 .containermain__text--letterbig{
@@ -128,21 +139,43 @@ body{
 .containerflex2__items--letterclear{
     color: #B3B2B7;
     padding-right: 0px;
+    margin-left: 3.75rem;
 }
 
 .pseudobefore1::before{
     content: " 01 ";
-    margin-left: -30px;
+    color: white;
+    margin-left: -1.9rem;
     background-color: #F3603B;
     border-radius: 30px;
+    padding: 10px 20px;
+    margin-right: 1.9rem;
+}
+
+.pseudobefore2::before{
+    content: " 02 ";
+}
+
+.pseudobefore3::before{
+    content: " 03 ";
 }
 
 .containerflex2__items{
     width: 25%;
     padding-left: 50px;
+    
+}
+
+.buttonfinish button{
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Estilos cards comentarios */
+
+#conteitemscarrusel{
+    display: none;
+}
 
 .containercomments{
     display: flex;
@@ -164,7 +197,14 @@ body{
     position: absolute;
     align-items: center;
     top: -30%;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.containercomments__comment--letter{
+    color: #B9B9C1;
+    font-weight: 500;
+
 }
 
 .buttocenter{
@@ -181,6 +221,12 @@ body{
     background-color: white;
     color: #F3603B;
     border: none;
+    
+}
+
+.containerflex3__buttondiv{
+    display: flex;
+    align-items: center;
 }
 
 .containerflex3__title{
@@ -196,31 +242,41 @@ body{
 }
 
 .containerflex4__imgredes{
-
     /* margin-top: 60px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.5rem;
+    color: white;
     
 }
+
+.containerflex4__imgredes i:hover{
+    cursor: pointer;
+    color: #F3603B;
+}
+
 .containerflex4__nav{
-    text-decoration: none;
     display: flex;
-    padding: 10px; 
+    padding: 30px; 
+    font-weight: 400;
+    line-height: 30px;
+
 }
 
-.containerflex4__nav1{
+.containerflex4__nav1 a{
     flex-direction: column;
-    
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
 
+.containerflex4__nav1 a:hover{
+    color: #F3603B;
 }
 
 #email{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
     border-radius: 30px;
     text-align: left;
     border-style: none;
@@ -228,13 +284,10 @@ body{
 
 /* Estilos para dar a conocer al usuario el llenar o no email */
 
-#email:invalid {
-    border: 2px dashed rgb(17, 2, 2);
+#email:invalid:required {
+    border: 2px solid rgb(206, 20, 20);
 }
 
-#email:invalid:required {
-    background-image: linear-gradient(to right, rgb(73, 73, 73), rgb(235, 157, 75));
-}  
 #email:valid {
     border: 2px solid yellow;
 }
@@ -248,10 +301,218 @@ body{
     padding: 15px 25px 15px 25px;
 }
 
+.containerflex4__form{
+    padding-top: 50px;
+}
+
 .containerflex4__copy{
     color:  #8C8C94;
     font-weight: 500;
     font-size: 0.78rem;
     padding-left: 50px;
+}
+
+.containerflex4__form--required{
+    font-size: 0.8rem;
+    color: rgb(104, 17, 17);
+    text-align:left;  
+}
+
+#containerflex4__copy2{
+    display: none;
+}
+
+
+@media (max-width:375px){
+    .conteinerheader__menu {
+        display: none;}
+
+    .containerheader__menuhamburguer{
+            display: block;
+            padding-left: 150px;
+            font-size: 2rem;
+    }
+    
+    header button {
+            display: none;
+    }
+    
+    /* main */
+
+    main{
+        flex-direction: column;
+    }
+    
+    .containermain__img{
+        order: -1;
+        /* width: 20%; */
+        height: auto;
+        align-items: center;
+    }
+
+    .containermain__img img{
+        width: 300px;
+        height: auto;
+    }
+
+    .containermain__text{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        text-align: center;
+        width: auto;
+    }
+
+    .containermain__text--letterblack{
+        padding-right: 0; 
+    }
+
+    .containerflex2{
+        flex-direction: column;
+    }
+
+    .containerflex2__text{
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        text-align: center;
+    }
+
+    .containerflex2__items{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .containerflex2__items--lettersmedium{
+        background-color: #f3603b20
+    }
+
+    .containerflex2__items--letterclear{
+    
+        margin-left: 12px;
+    }
+
+    .pseudobefore1::before{
+        margin-left: 12px;
+        padding: 10px 20px;
+    }
+
+    .containerflex3{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .containercomments{
+        display: none;
+    }
+    .containerflex4{
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+    .containerflex4__form{
+        align-items: center;
+        order: 1;
+    }
+
+    
+    .containerflex4__copy{
+        order: 5;
+    }
+
+    .containerflex4__imgredes--img{
+        padding: 20px;
+    }
+
+    .containerflex4__imgredes{
+        place-items: center;
+        font-size: 2.5rem;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .containerflex4__imgredes i{
+        padding: 10px;
+    }
+
+    .containerflex4__imgredes--img{
+        order: 4;
+    }
+    .containerflex4__imgredes--redes{
+        order: 3;
+    }
+/* carrusel */
+#conteitemscarrusel{
+    display: block;
+    height: auto;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.itemcarrusel{
+    position: relative;
+    height: 100%;
+}
+.tarjetacarrusel1{
+        background-color: burlywood;
+        height: 100%;
+}
+.flechascarrusel1{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;        
+}
+.flechascarrusel1 i{
+    color: white;  
+}
+#conteitemscarrusel{
+        height: 220px;
+        width: 300px;
+        overflow: hidden;  
+        
+}
+
+    /* FINAL CARRUSEL */
+
+    .containerflex4__copy{
+        display: none;
+    }
+
+    #containerflex4__copy2{
+        display: block;
+        order: -6;
+        text-align: center;
+        padding: 0%;
+        padding-bottom: 50px;
+    }
+
+    .containerflex4__nav li {
+        padding: 10px;
+    }
+
+    .containerflex4__imgredes{
+        padding-bottom: 0%;
+    }
+
+    .containerflex4__form--required{
+        display: none;
+    }
+
+    .containerflex4__form{
+        padding-top: 0;
+    }
+
+    .containerflex3 h2{
+        text-align: center;
+    }
+
 
 }

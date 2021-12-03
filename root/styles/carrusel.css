@@ -1,0 +1,30 @@
+
+.itemcarrusel{
+position: relative;
+height: 100%;
+
+}
+.tarjetacarrusel1{
+    background-color: burlywood;
+    height: 100%;
+
+}
+.flechascarrusel1{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#conteitemscarrusel{
+    
+    height: 350px;
+    width: 420px;
+    overflow: hidden;
+    
+}
+
